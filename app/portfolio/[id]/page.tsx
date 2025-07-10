@@ -47,10 +47,10 @@ export default function ProjectDetailPage() {
       description:
         "As a Full Stack Developer at Initiate Pte Ltd, I built comprehensive AI-driven admin dashboards and in-app analytics panels. This platform serves as a marketplace for AI solutions, where I led prompt engineering to optimize insights delivery and implemented full in-app and email notification systems that significantly improved user retention and admin response times. The project showcases modern web development practices combined with artificial intelligence to create meaningful business solutions.",
       images: [
-        "/placeholder.svg?height=600&width=800",
-        "/placeholder.svg?height=600&width=800",
-        "/placeholder.svg?height=600&width=800",
-        "/placeholder.svg?height=600&width=800",
+        "/main.png?height=600&width=800",
+        "/second.png?height=600&width=800",
+        "/third.png?height=600&width=800",
+        "/fourth.png?height=600&width=800",
       ],
       liveUrl: "#",
       githubUrl: "#",
