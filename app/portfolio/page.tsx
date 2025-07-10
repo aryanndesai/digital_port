@@ -15,7 +15,7 @@ export default function PortfolioPage() {
       title: "Initiate AI Platform",
       description:
         "AI-powered marketplace connecting startups with solutions. Built comprehensive admin dashboards, user analytics, and notification systems with modern web technologies.",
-      image: "/placeholder.svg?height=400&width=600",
+      image: "/main.png?height=400&width=600",
       tags: ["Next.js", "Node.js", "PostgreSQL", "Prisma ORM", "AI"],
       liveUrl: "#",
       githubUrl: "#",
