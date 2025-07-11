@@ -307,7 +307,7 @@ export default function ProjectDetailPage() {
       images: [
         "/pokemon1.avif?height=600&width=800",
         "/pokecode.png?height=600&width=800"
-      ],
+      ], 
       imageCaptions: [
         "Main game interface showing battle system",
         "Pokemon inventory and evolution tracking"
