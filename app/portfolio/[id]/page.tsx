@@ -42,8 +42,8 @@ export default function ProjectDetailPage() {
   // Project data with unique content for each project
   const projectData = {
     "initiate-platform": {
-      title: "Initiate AI Platform",
-      summary: "AI-powered marketplace connecting startups with solutions through intelligent dashboards and analytics",
+      title: "Initiate",
+      summary: "A startup which allows AI-powered marketplace connecting startups with solutions through intelligent dashboards and analytics",
       description:
         "As a Full Stack Developer at Initiate Pte Ltd, I built comprehensive AI-driven admin dashboards and in-app analytics panels. This platform serves as a marketplace for AI solutions, where I led prompt engineering to optimize insights delivery and implemented full in-app and email notification systems that significantly improved user retention and admin response times. The project showcases modern web development practices combined with artificial intelligence to create meaningful business solutions.",
       images: [
@@ -52,7 +52,23 @@ export default function ProjectDetailPage() {
         "/third.png?height=600&width=800",
         "/fourth.png?height=600&width=800",
       ],
-      liveUrl: "#",
+      imageCaptions: [
+        "Main landing page showing AI insights and recommended servoces for you",
+        "A RAG chatbot powered by AI",
+        "Resource Hub which allows SMEs to seek for grants by goverments",
+        "AI solution marketplace browsing interface"
+      ],
+      challenges: [
+        { 
+          title: "Scaling Marketplace", 
+          description: "Built microservices with a one stop experience and getting AI startups on board to list their services with us." 
+        },
+        { 
+          title: "Secure Payments",       
+          description: "Implemented Stripe orchestration with fraud-detection rules to support multi-currency, subscription & usage billing." 
+        },
+      ],
+      liveUrl: "https://initiate.global",
       githubUrl: "#",
       metadata: {
         techStack: ["Next.js", "Node.js", "PostgreSQL", "Prisma ORM", "TypeScript", "AI Integration"],
@@ -72,7 +88,7 @@ export default function ProjectDetailPage() {
             "Led prompt engineering initiatives to optimize AI insights delivery across the platform. Built sophisticated analytics panels that process user data and startup metrics, providing actionable intelligence for both admin users and startup clients. The AI integration includes smart recommendations and automated insights generation.",
         },
         {
-          title: "Notification Systems & User Experience",
+          title: "Notification Systems ",
           content:
             "Developed comprehensive in-app and email notification systems that improved user retention rates significantly. Created a modular review system for user feedback and suggestions across all platform components, enhancing the overall user experience and admin response capabilities.",
         },
@@ -94,14 +110,29 @@ export default function ProjectDetailPage() {
       title: "ML Stock Predictor",
       summary: "Machine learning application that predicts stock price movements using advanced AI algorithms",
       description:
-        "Built a sophisticated machine learning tool that analyzes historical stock data to predict whether a stock's price will go up or down using past trends and patterns. This project combines financial trend analysis with artificial intelligence to generate smarter stock predictions, featuring comprehensive data visualization through interactive charts and dashboards. The system processes large datasets and applies various ML algorithms to identify patterns and make accurate predictions.",
+        "Built a sophisticated machine learning tool that analyzes historical stock data to predict whether a stock's price will go up or down using past trends and incorporating finacial indicators to predict. This project combines financial trend analysis with artificial intelligence techniques to generate smarter stock predictions which keep learning over time, featuring comprehensive data visualization through interactive charts and dashboards. The system processes large datasets and applies various ML algorithms to identify patterns and make accurate predictions.",
       images: [
         "/placeholder.svg?height=600&width=800",
         "/placeholder.svg?height=600&width=800",
         "/placeholder.svg?height=600&width=800",
       ],
+      imageCaptions: [
+        "Main dashboard showing stock prediction interface",
+        "Historical data analysis and trend visualization",
+        "Prediction results with confidence intervals"
+      ],
+      challenges: [
+        { 
+          title: "Data Quality Issues", 
+          description: "Developed robust data cleaning pipelines to handle missing values, outliers, and inconsistent financial data formats." 
+        },
+        { 
+          title: "Model Accuracy",       
+          description: "Experimented with multiple ML algorithms and feature engineering techniques to improve prediction accuracy in volatile markets." 
+        },
+      ],
       liveUrl: "#",
-      githubUrl: "#",
+      githubUrl: "https://github.com/aryannjdesai/ML-Stock-Predictor",
       metadata: {
         techStack: ["Python", "Machine Learning", "Pandas", "NumPy", "Scikit-learn", "Matplotlib"],
         role: "ML Engineer & Developer",
@@ -144,13 +175,28 @@ export default function ProjectDetailPage() {
       description:
         "Developed a comprehensive sustainability platform that encourages eco-friendly actions through innovative technology. The application features AI-powered image verification to automatically validate user-submitted environmental tasks, ensuring authenticity and accuracy. Built a sophisticated gamification system that rewards users for eco-friendly actions, driving engagement and promoting sustainable behaviors. The platform combines environmental consciousness with modern web technologies to create meaningful impact.",
       images: [
-        "/placeholder.svg?height=600&width=800",
-        "/placeholder.svg?height=600&width=800",
+        "/ecoprimers.png?height=600&width=800",
         "/placeholder.svg?height=600&width=800",
         "/placeholder.svg?height=600&width=800",
         "/placeholder.svg?height=600&width=800",
       ],
-      liveUrl: "#",
+      imageCaptions: [
+        "Main dashboard showing user eco-actions and achievements",
+        "Task submission interface with AI verification",
+        "Gamification leaderboard and rewards system",
+        "Environmental impact analytics dashboard"
+      ],
+      challenges: [
+        { 
+          title: "AI Verification Accuracy", 
+          description: "Trained custom image recognition models to accurately verify diverse environmental actions with minimal false positives." 
+        },
+        { 
+          title: "User Engagement",       
+          description: "Designed gamification mechanics that balanced competition with collaboration to drive sustained eco-friendly behaviors and tried to implement games that enhance user retention." 
+        },
+      ],
+      liveUrl: "https://ecoprimers.fly.dev/",
       githubUrl: "#",
       metadata: {
         techStack: ["Python", "Flask", "SQLite", "AI Image Recognition", "HTML/CSS", "JavaScript"],
@@ -177,9 +223,9 @@ export default function ProjectDetailPage() {
       ],
       credits: [
         {
-          title: "Environmental Consultants",
+          title: "Environmental Awareness",
           description:
-            "Worked with environmental experts to ensure the platform promotes scientifically-backed sustainable practices and accurately measures environmental impact.",
+            "Our platform prioritizes and promotes the 3 Rs of recycling: Reduce, Reuse, and Recycle, to encourage sustainable practices and help users minimize their environmental footprint.",
         },
         {
           title: "AI Technology Partners",
@@ -189,16 +235,33 @@ export default function ProjectDetailPage() {
       ],
     },
     "polyguru-platform": {
-      title: "Polyguru Platform",
+      title: "Polyguru",
       summary: "Student productivity platform with AI-enhanced forums and smart learning features",
       description:
         "Designed and developed a comprehensive student productivity platform that revolutionizes peer learning through technology. The platform features subject-based forums with intelligent filtering systems and AI-powered features that suggest relevant questions and resources to students. Built to boost peer learning and engagement, Polyguru creates a collaborative environment where students can share knowledge, ask questions, and learn from each other more effectively.",
       images: [
-        "/placeholder.svg?height=600&width=800",
-        "/placeholder.svg?height=600&width=800",
-        "/placeholder.svg?height=600&width=800",
+        "/test.png?height=600&width=800",
+        "/GPA1.png?height=600&width=800",
+        "/dasboard.png?height=600&width=800",
+        "/x.png?height=600&width=800"
       ],
-      liveUrl: "#",
+      imageCaptions: [
+        "AI powered testing system to test you on your weaknesses",
+        "Subject-based forum interface with AI suggestions",
+        "Student progress tracking and analytics dashboard",
+        "A overall view of all the services present"
+      ],
+      challenges: [
+        { 
+          title: "Content Moderation", 
+          description: "Implemented AI-assisted moderation tools to maintain academic integrity while encouraging open discussion. And while using ai to learn better ensuring the learning process ocurs." 
+        },
+        { 
+          title: "Personalization at Scale",       
+          description: "Developed recommendation algorithms that adapt to individual learning styles without compromising performance." 
+        },
+      ],
+      liveUrl: "https://polyguru.xyz/",
       githubUrl: "#",
       metadata: {
         techStack: ["Next.js", "PostgreSQL", "Prisma ORM", "TypeScript", "AI Features"],
@@ -227,21 +290,38 @@ export default function ProjectDetailPage() {
         {
           title: "Educational Advisors",
           description:
-            "Consulted with education professionals and teachers to ensure the platform aligns with effective learning methodologies and student needs.",
+            "Consulted with education professionals like our subject teachers to ensure the platform aligns with effective learning methodologies and student needs. Understand what it means for the learning process to occur. Essentialy a empathy study.",
         },
         {
           title: "Student Beta Testers",
           description:
-            "Worked closely with student groups to test features, gather feedback, and iterate on the platform design to maximize learning effectiveness and user engagement.",
+            "Worked closely with student groups like some of our mutual friends to test features, gather feedback, and iterate on the platform design to maximize learning effectiveness and user engagement.",
         },
       ],
     },
     "pokemon-pocket": {
       title: "Pokemon Pocket Game",
-      summary: "Console-based Pokemon game with advanced C# gameplay mechanics and progression systems",
+      summary: "A Individual Console-based Pokemon game with advanced C# gameplay mechanics and progression systems",
       description:
         "Built a comprehensive console-based Pokemon game using advanced C#/.NET practices, featuring sophisticated gameplay mechanics including Pokemon tracking, evolution systems, and quest progression. The game demonstrates object-oriented programming principles, database integration, and complex game state management. Players can capture, train, and evolve Pokemon while completing various quests and challenges in an immersive text-based adventure.",
-      images: ["/placeholder.svg?height=600&width=800", "/placeholder.svg?height=600&width=800"],
+      images: [
+        "/pokemon1.avif?height=600&width=800",
+        "/pokecode.png?height=600&width=800"
+      ],
+      imageCaptions: [
+        "Main game interface showing battle system",
+        "Pokemon inventory and evolution tracking"
+      ],
+      challenges: [
+        { 
+          title: "Game Balance", 
+          description: "Designed and tuned battle mechanics to ensure fair gameplay while maintaining the Pokemon franchise feel." 
+        },
+        { 
+          title: "State Management",       
+          description: "Implemented efficient save/load systems to handle complex game state including Pokemon stats, items, and quest progress." 
+        },
+      ],
       liveUrl: "#",
       githubUrl: "#",
       metadata: {
@@ -269,9 +349,9 @@ export default function ProjectDetailPage() {
       ],
       credits: [
         {
-          title: "Game Design Research",
+          title: "Peers",
           description:
-            "Studied classic Pokemon game mechanics and RPG design principles to create authentic and engaging gameplay systems that capture the essence of Pokemon adventures.",
+            "A experience where I went outside of scope to understand users perspective of the game and how they want it to be like thanks to my friends suggestions this app was refined.",
         },
         {
           title: "Programming Mentors",
@@ -285,7 +365,24 @@ export default function ProjectDetailPage() {
       summary: "Interactive investment dashboard with return projections and financial insights visualization",
       description:
         "Created comprehensive financial analysis tools using Excel and Tableau to build interactive dashboards for investment return projections and financial insights. The project demonstrates advanced data visualization techniques and financial modeling capabilities, providing users with clear, actionable insights into investment performance, budgeting tools, and return projections for various financial scenarios.",
-      images: ["/placeholder.svg?height=600&width=800", "/placeholder.svg?height=600&width=800"],
+      images: [
+        "/placeholder.svg?height=600&width=800",
+        "/placeholder.svg?height=600&width=800",
+      ],
+      imageCaptions: [
+        "Main dashboard showing investment portfolio overview",
+        "Detailed financial projection and analysis charts"
+      ],
+      challenges: [
+        { 
+          title: "Data Visualization", 
+          description: "Created interactive financial charts that clearly communicate complex investment concepts to non-technical users." 
+        },
+        { 
+          title: "Model Accuracy",       
+          description: "Developed robust financial models that account for market volatility while providing reliable projections." 
+        },
+      ],
       liveUrl: "#",
       githubUrl: "#",
       metadata: {
@@ -382,7 +479,7 @@ export default function ProjectDetailPage() {
             transition={{ duration: 1, ease: [0.25, 0.1, 0.25, 1] }}
             className="mb-16"
           >
-            <h2 className="text-4xl md:text-5xl font-light mb-6 tracking-tight text-slate-900">Project Deep Dive</h2>
+            <h2 className="text-4xl md:text-5xl font-light mb-6 tracking-tight text-slate-900">Project Dive</h2>
             <div className="w-16 h-1 bg-slate-900 mb-8"></div>
             <p className="text-lg md:text-xl text-slate-600 font-light max-w-3xl">
               Detailed insights into the development process, challenges overcome, and solutions implemented
@@ -478,75 +575,110 @@ export default function ProjectDetailPage() {
               </div>
             </motion.div>
 
-            {/* Center Column - Image Carousel */}
-            <motion.div
-              initial={{ opacity: 0, y: 50 }}
-              animate={isMainInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
-              transition={{ duration: 0.8, delay: 0.2, ease: [0.25, 0.1, 0.25, 1] }}
-              className="lg:col-span-6"
+            {/* Center Column - Image Carousel + Challenges */}
+<motion.div
+  initial={{ opacity: 0, y: 50 }}
+  animate={isMainInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
+  transition={{ duration: 0.8, delay: 0.2, ease: [0.25, 0.1, 0.25, 1] }}
+  className="lg:col-span-6 space-y-8"
+>
+  {/* Image Carousel */}
+  <div className="relative overflow-hidden rounded-2xl bg-gray-100 border border-slate-200 card-shadow-lg">
+    {/* Main Image */}
+    <div className="relative w-full aspect-video rounded-2xl overflow-hidden bg-gray-100">
+      <img
+        src={project.images[currentImageIndex]}
+        alt={`${project.title} screenshot`}
+        className="absolute inset-0 w-full h-full object-cover"
+      />
+      <div className="absolute inset-0 bg-gradient-to-t from-slate-900/10 to-transparent"></div>
+
+      {/* Navigation Arrows */}
+      {project.images.length > 1 && (
+        <>
+          <button
+            onClick={prevImage}
+            className="absolute left-4 top-1/2 transform -translate-y-1/2 w-10 h-10 bg-white/80 backdrop-blur-sm rounded-full flex items-center justify-center hover:bg-white transition-colors duration-300 shadow-lg"
+          >
+            <ChevronLeft className="text-slate-700" size={20} />
+          </button>
+          <button
+            onClick={nextImage}
+            className="absolute right-4 top-1/2 transform -translate-y-1/2 w-10 h-10 bg-white/80 backdrop-blur-sm rounded-full flex items-center justify-center hover:bg-white transition-colors duration-300 shadow-lg"
+          >
+            <ChevronRight className="text-slate-700" size={20} />
+          </button>
+        </>
+      )}
+
+      {/* Image Counter */}
+      {project.images.length > 1 && (
+        <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-black/50 backdrop-blur-sm rounded-full px-3 py-1">
+          <span className="text-white text-sm">
+            {currentImageIndex + 1} / {project.images.length}
+          </span>
+        </div>
+      )}
+    </div>
+
+    {/* Caption below the image */}
+    <p className="mt-2 px-4 text-center text-xs text-slate-500">
+      {project.imageCaptions?.[currentImageIndex] ?? 
+       `Slide ${currentImageIndex + 1} of ${project.images.length}`}
+    </p>
+
+    {/* Thumbnail Navigation */}
+    {project.images.length > 1 && (
+      <div className="p-4 bg-white border-t border-slate-200">
+        <div className="flex space-x-2 overflow-x-auto">
+          {project.images.map((image, index) => (
+            <button
+              key={index}
+              onClick={() => setCurrentImageIndex(index)}
+              className={`flex-shrink-0 w-16 h-12 rounded-lg overflow-hidden border-2 transition-colors duration-300 ${
+                index === currentImageIndex ? "border-slate-900" : "border-slate-200 hover:border-slate-400"
+              }`}
             >
-              <div className="relative overflow-hidden rounded-2xl bg-gray-100 border border-slate-200 card-shadow-lg">
-                {/* Main Image */}
-                <div className="relative h-96 md:h-[500px]">
-                  <img
-                    src={project.images[currentImageIndex] || "/placeholder.svg"}
-                    alt={`${project.title} - Image ${currentImageIndex + 1}`}
-                    className="w-full h-full object-cover transition-opacity duration-500"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-slate-900/10 to-transparent"></div>
+              <img
+                src={image || "/placeholder.svg"}
+                alt={`Thumbnail ${index + 1}`}
+                className="w-full h-full object-cover"
+              />
+            </button>
+          ))}
+        </div>
+      </div>
+    )}
+  </div>
 
-                  {/* Navigation Arrows */}
-                  {project.images.length > 1 && (
-                    <>
-                      <button
-                        onClick={prevImage}
-                        className="absolute left-4 top-1/2 transform -translate-y-1/2 w-10 h-10 bg-white/80 backdrop-blur-sm rounded-full flex items-center justify-center hover:bg-white transition-colors duration-300 shadow-lg"
-                      >
-                        <ChevronLeft className="text-slate-700" size={20} />
-                      </button>
-                      <button
-                        onClick={nextImage}
-                        className="absolute right-4 top-1/2 transform -translate-y-1/2 w-10 h-10 bg-white/80 backdrop-blur-sm rounded-full flex items-center justify-center hover:bg-white transition-colors duration-300 shadow-lg"
-                      >
-                        <ChevronRight className="text-slate-700" size={20} />
-                      </button>
-                    </>
-                  )}
-
-                  {/* Image Counter */}
-                  {project.images.length > 1 && (
-                    <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-black/50 backdrop-blur-sm rounded-full px-3 py-1">
-                      <span className="text-white text-sm">
-                        {currentImageIndex + 1} / {project.images.length}
-                      </span>
-                    </div>
-                  )}
-                </div>
-
-                {/* Thumbnail Navigation */}
-                {project.images.length > 1 && (
-                  <div className="p-4 bg-white border-t border-slate-200">
-                    <div className="flex space-x-2 overflow-x-auto">
-                      {project.images.map((image, index) => (
-                        <button
-                          key={index}
-                          onClick={() => setCurrentImageIndex(index)}
-                          className={`flex-shrink-0 w-16 h-12 rounded-lg overflow-hidden border-2 transition-colors duration-300 ${
-                            index === currentImageIndex ? "border-slate-900" : "border-slate-200 hover:border-slate-400"
-                          }`}
-                        >
-                          <img
-                            src={image || "/placeholder.svg"}
-                            alt={`Thumbnail ${index + 1}`}
-                            className="w-full h-full object-cover"
-                          />
-                        </button>
-                      ))}
-                    </div>
-                  </div>
-                )}
+  {/* Challenges Section - Right below the image */}
+  {project.challenges && project.challenges.length > 0 && (
+    <div className="space-y-4">
+      <h3 className="text-2xl font-light text-slate-900 text-center">Challenges Faced</h3>
+      <div className="grid md:grid-cols-2 gap-4">
+        {project.challenges.map((challenge, index) => (
+          <motion.div
+            key={index}
+            initial={{ opacity: 0, y: 20 }}
+            animate={isMainInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+            transition={{ duration: 0.5, delay: 0.3 + index * 0.1 }}
+            className="bg-white rounded-xl p-6 card-shadow border border-slate-100"
+          >
+            <div className="flex items-start space-x-3">
+              <div className="flex-shrink-0 w-6 h-6 bg-slate-900 rounded-full flex items-center justify-center">
+                <span className="text-white text-xs font-medium">{index + 1}</span>
               </div>
-            </motion.div>
+              <div className="flex-1">
+                <h4 className="text-base font-medium text-slate-900 mb-2">{challenge.title}</h4>
+                <p className="text-slate-600 text-sm leading-relaxed">{challenge.description}</p>
+              </div>
+            </div>
+          </motion.div>
+        ))}
+      </div>
+    </div>
+  )}
+</motion.div>
 
             {/* Right Column - Description and Action Buttons */}
             <motion.div
@@ -555,11 +687,13 @@ export default function ProjectDetailPage() {
               transition={{ duration: 0.8, delay: 0.4, ease: [0.25, 0.1, 0.25, 1] }}
               className="lg:col-span-3 space-y-6"
             >
+              
+              {/* About This Project */}
               <div className="bg-white rounded-2xl p-6 card-shadow">
                 <h3 className="text-2xl font-light text-slate-900 mb-6">About This Project</h3>
                 <p className="text-slate-600 text-base leading-relaxed mb-8">{project.description}</p>
 
-                {/* Action Buttons - Moved to the right */}
+                {/* Action Buttons */}
                 <div className="space-y-3">
                   <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }} className="w-full">
                     <Button className="w-full bg-slate-900 text-white hover:bg-slate-800 py-3 rounded-full" asChild>
@@ -587,7 +721,7 @@ export default function ProjectDetailPage() {
           </div>
         </div>
       </section>
-
+                
       {/* Credits Section */}
       <section ref={creditsRef} className="px-4 sm:px-6 lg:px-8 pb-20 py-20 bg-white">
         <div className="max-w-7xl mx-auto">

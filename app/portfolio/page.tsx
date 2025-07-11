@@ -15,10 +15,10 @@ export default function PortfolioPage() {
       title: "Initiate AI Platform",
       description:
         "AI-powered marketplace connecting startups with solutions. Built comprehensive admin dashboards, user analytics, and notification systems with modern web technologies.",
-      image: "/main.png?height=400&width=600",
+      image: "/initiate.png?height=400&width=600",
       tags: ["Next.js", "Node.js", "PostgreSQL", "Prisma ORM", "AI"],
-      liveUrl: "#",
-      githubUrl: "#",
+      liveUrl: "https://initiate.global",
+      
       featured: true,
     },
     {
@@ -26,10 +26,10 @@ export default function PortfolioPage() {
       title: "ML Stock Predictor",
       description:
         "Machine learning application that analyzes historical stock data to predict price movements using advanced AI algorithms and data visualization.",
-      image: "/placeholder.svg?height=400&width=600",
+      image: "/ml.png?height=400&width=600",
       tags: ["Python", "Machine Learning", "Data Analysis", "AI"],
-      liveUrl: "#",
-      githubUrl: "#",
+      
+      githubUrl: "https://github.com/aryannjdesai/ML-Stock-Predictor",
       featured: true,
     },
     {
@@ -37,10 +37,10 @@ export default function PortfolioPage() {
       title: "Eco Primers",
       description:
         "Sustainability web application with AI-powered image verification for eco-friendly tasks and gamification system to encourage environmental actions.",
-      image: "/placeholder.svg?height=400&width=600",
+      image: "/ecoprimers.png?height=400&width=600",
       tags: ["Python", "Flask", "AI Verification", "Gamification"],
-      liveUrl: "#",
-      githubUrl: "#",
+      liveUrl: "https://ecoprimers.fly.dev/",
+      githubUrl: "https://github.com/dentolos19/ecoprimers",
       featured: true,
     },
     {
@@ -48,10 +48,9 @@ export default function PortfolioPage() {
       title: "Polyguru Platform",
       description:
         "Student productivity platform with subject-based forums, smart filters, and AI features for enhanced peer learning and engagement.",
-      image: "/placeholder.svg?height=300&width=400",
+      image: "/polyguru.png?height=300&width=400",
       tags: ["Next.js", "PostgreSQL", "AI Features"],
-      liveUrl: "#",
-      githubUrl: "#",
+      liveUrl: "https://polyguru.xyz/",
       featured: false,
     },
     {
@@ -59,7 +58,7 @@ export default function PortfolioPage() {
       title: "Pokemon Pocket Game",
       description:
         "Console-based Pokemon game built with C#/.NET featuring advanced gameplay mechanics, evolution tracking, and quest progression systems.",
-      image: "/placeholder.svg?height=300&width=400",
+      image: "/pokelogo.jpg?height=300&width=400",
       tags: ["C#", ".NET", "SQLite", "Game Development"],
       liveUrl: "#",
       githubUrl: "#",
@@ -72,8 +71,8 @@ export default function PortfolioPage() {
         "Interactive dashboard built with Tableau and Excel for investment return projections and financial insights visualization.",
       image: "/placeholder.svg?height=300&width=400",
       tags: ["Tableau", "Excel", "Data Visualization"],
-      liveUrl: "#",
-      githubUrl: "#",
+      
+      githubUrl: "https://github.com/aryannjdesai/Data-Analysis",
       featured: false,
     },
   ]
@@ -103,8 +102,8 @@ export default function PortfolioPage() {
             <h1 className="text-4xl md:text-6xl font-light mb-6 tracking-tight text-slate-900">Portfolio</h1>
             <div className="w-16 h-1 bg-slate-900 mx-auto mb-8"></div>
             <p className="text-xl text-slate-600 font-light max-w-2xl mx-auto leading-relaxed">
-              A collection of AI-powered solutions, full-stack applications, and innovative projects showcasing
-              technical expertise
+              A collection Individual and group projects of AI-powered solutions, full-stack applications, and innovative projects showcasing
+              technical expertise and creative thinking
             </p>
           </motion.div>
         </div>

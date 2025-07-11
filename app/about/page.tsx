@@ -25,7 +25,7 @@ export default function AboutPage() {
     },
     {
       icon: Users,
-      title: "Product Development",
+      title: "Product Development & design",
       description: "Creating user-centric platforms that drive engagement and solve real-world problems",
     },
   ]
@@ -53,30 +53,23 @@ export default function AboutPage() {
     {
       title: "Photography",
       subtitle: "Capturing moments",
-      image: "/placeholder.svg?height=400&width=600",
+      image: "/scenery.jpg?height=400&width=600",
       description:
         "Exploring visual storytelling through street photography and landscape captures during my travels around Singapore and beyond.",
     },
     {
       title: "Financial Analysis",
       subtitle: "Market insights",
-      image: "/placeholder.svg?height=400&width=600",
+      image: "/stocks.jpg?height=400&width=600",
       description:
         "Building investment dashboards and analyzing market trends, combining my technical skills with financial modeling.",
     },
     {
-      title: "Gaming",
-      subtitle: "Interactive experiences",
-      image: "/placeholder.svg?height=400&width=600",
-      description:
-        "Appreciating game design and user experience, which inspires my approach to building engaging digital platforms.",
-    },
-    {
       title: "Continuous Learning",
       subtitle: "Staying current",
-      image: "/placeholder.svg?height=400&width=600",
+      image: "/book.jpg?height=400&width=600",
       description:
-        "Keeping up with the latest in AI, web development, and emerging technologies through courses and personal projects.",
+        "Reading books is arguably one of the most effective ways to acquire firsthand knowledge.",
     },
   ]
 
@@ -120,7 +113,7 @@ export default function AboutPage() {
             >
               <div className="aspect-square bg-white rounded-2xl card-shadow-lg flex items-center justify-center overflow-hidden">
                 <img
-                  src="/placeholder.svg?height=400&width=400"
+                  src="/aryan.jpg?height=400&width=400"
                   alt="About Aryan Desai"
                   className="w-full h-full object-cover"
                 />
@@ -137,20 +130,9 @@ export default function AboutPage() {
               <h2 className="text-3xl font-light text-slate-900">My Journey</h2>
               <div className="space-y-4 text-slate-600 leading-relaxed">
                 <p>
-                  I'm a passionate Software & AI enthusiast currently based in Singapore, studying Information
-                  Technology at Nanyang Polytechnic while working full-time as a Full Stack Developer at Initiate Pte
-                  Ltd.
+                  I am a recent polytechnic graduate in Information Technology with a passion for web development, data analysis, UI/UX design, and teamwork. My experience includes working as an AI Engineer at Initiate, where I oversaw RAG model workflows and integrated APIs, gaining exposure to LLMs and fine-tuning concepts.
                 </p>
-                <p>
-                  My journey spans from building AI-powered dashboards and notification systems to developing machine
-                  learning applications for stock prediction. I specialize in creating end-to-end solutions that combine
-                  modern web technologies with artificial intelligence.
-                </p>
-                <p>
-                  Currently, I'm focused on building scalable platforms that solve real-world problems, from
-                  sustainability applications to student productivity tools, always with an emphasis on user experience
-                  and technical excellence.
-                </p>
+                
               </div>
             </motion.div>
           </div>

@@ -26,24 +26,24 @@ export default function Home() {
   const testimonials = [
     {
       quote:
-        "Aryan's technical expertise and innovative approach to AI solutions have been instrumental in our platform's success. His ability to deliver complex features efficiently is remarkable.",
-      author: "Tech Lead at Initiate",
-      role: "Direct Supervisor",
+        "Working with Aryan has been a pleasure. His attention to detail and problem-solving skills are exceptional.",
+      author: "Keshuram Ramani",
+      role: "CEO of Initiate",
+      image: "/keshu.jpg?height=60&width=60",
+    },
+    {
+      quote:
+        "Aryan is a valuable asset to any team. His technical skills and leadership qualities make him stand out.",
+      author: "Form Teacher, Class of 2023",
+      role: "Academic Mentor",
       image: "/placeholder.svg?height=60&width=60",
     },
     {
       quote:
-        "Working with Aryan on the sustainability platform was a great experience. His full-stack skills and attention to user experience made the project a success.",
-      author: "Project Manager",
-      role: "Eco Primers Collaboration",
-      image: "/placeholder.svg?height=60&width=60",
-    },
-    {
-      quote:
-        "Aryan's machine learning implementation for our stock prediction tool exceeded expectations. His analytical thinking and coding skills are top-notch.",
-      author: "Finance Technology Partner",
-      role: "ML Project Collaborator",
-      image: "/placeholder.svg?height=60&width=60",
+        "I highly recommend Aryan for any technical project. His professionalism, dedication, and creative problem solving consistently stood out during my class.",
+      author: "Brandon Ooi",
+      role: "Module Lead for AI and Data Analyitcs",
+      image: "/brandon.jpg?height=60&width=60",
     },
   ]
 
@@ -69,21 +69,21 @@ export default function Home() {
       title: "Initiate AI Platform",
       description:
         "AI-powered marketplace with smart dashboards, notification systems, and user analytics for startups and admin users.",
-      image: "/placeholder.svg?height=300&width=400",
+      image: "/initiate.png?height=300&width=400",
       tags: ["Next.js", "Node.js", "PostgreSQL", "AI"],
     },
     {
       title: "ML Stock Predictor",
       description:
         "Machine learning application that predicts stock price movements using historical trends and AI algorithms.",
-      image: "/placeholder.svg?height=300&width=400",
+      image: "/ml.png?height=300&width=400",
       tags: ["Python", "Machine Learning", "Data Analysis"],
     },
     {
       title: "Eco Primers",
       description:
         "Sustainability web application with AI-powered image verification and gamification system for eco-friendly actions.",
-      image: "/placeholder.svg?height=300&width=400",
+      image: "/ecoprimers.png?height=300&width=400",
       tags: ["Python", "Flask", "AI Verification"],
     },
   ]
@@ -179,7 +179,7 @@ export default function Home() {
                   size="lg"
                   className="border-2 border-slate-300 text-slate-900 hover:bg-slate-50 px-8 py-4 text-base font-medium rounded-full bg-transparent"
                 >
-                  Get in Touch
+                  Download CV
                 </Button>
               </Link>
             </motion.div>
@@ -215,7 +215,7 @@ export default function Home() {
             >
               <div className="aspect-square bg-white rounded-2xl card-shadow-lg flex items-center justify-center overflow-hidden">
                 <img
-                  src="/placeholder.svg?height=500&width=500"
+                  src="/aryan.jpg?height=500&width=500"
                   alt="About Aryan Desai"
                   className="w-full h-full object-cover"
                 />
