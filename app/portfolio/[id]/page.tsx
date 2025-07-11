@@ -112,14 +112,14 @@ export default function ProjectDetailPage() {
       description:
         "Built a sophisticated machine learning tool that analyzes historical stock data to predict whether a stock's price will go up or down using past trends and incorporating finacial indicators to predict. This project combines financial trend analysis with artificial intelligence techniques to generate smarter stock predictions which keep learning over time, featuring comprehensive data visualization through interactive charts and dashboards. The system processes large datasets and applies various ML algorithms to identify patterns and make accurate predictions.",
       images: [
-        "/placeholder.svg?height=600&width=800",
-        "/placeholder.svg?height=600&width=800",
-        "/placeholder.svg?height=600&width=800",
+        "/mlbr.png?height=600&width=800",
+        "/mlc.png?height=600&width=800",
+        "/mlcode.png?height=600&width=800",
       ],
       imageCaptions: [
-        "Main dashboard showing stock prediction interface",
-        "Historical data analysis and trend visualization",
-        "Prediction results with confidence intervals"
+        "Shows how accurate the model is and above",
+        "Shows the stock predictions of Apple stock and yellow bar up means the stock will go up",
+        "Main code with the files that save data and help train model"
       ],
       challenges: [
         { 

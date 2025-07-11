@@ -7,11 +7,11 @@ import Link from "next/link"
 import { useRef, useState, useEffect } from "react"
 
 export default function Home() {
-  const heroRef = useRef(null)
-  const aboutRef = useRef(null)
-  const projectsRef = useRef(null)
-  const skillsRef = useRef(null)
-  const testimonialsRef = useRef(null)
+  const heroRef = useRef<HTMLElement>(null)
+  const aboutRef = useRef<HTMLElement>(null)
+  const projectsRef = useRef<HTMLElement>(null)
+  const skillsRef = useRef<HTMLElement>(null)
+  const testimonialsRef = useRef<HTMLElement>(null)
 
   const isHeroInView = useInView(heroRef, { once: false, margin: "-50%" })
   const isAboutInView = useInView(aboutRef, { once: true, margin: "-20%" })
@@ -28,7 +28,7 @@ export default function Home() {
       quote:
         "Working with Aryan has been a pleasure. His attention to detail and problem-solving skills are exceptional.",
       author: "Keshuram Ramani",
-      role: "CEO of Initiate",
+      role: "CEO and Co-Founder of Initiate",
       image: "/keshu.jpg?height=60&width=60",
     },
     {
@@ -108,7 +108,7 @@ export default function Home() {
   }
 
   const scrollToAbout = () => {
-    aboutRef.current?.scrollIntoView({ behavior: "smooth" })
+    aboutRef.current?.scrollIntoView({ behavior: "smooth" } as ScrollIntoViewOptions)
   }
 
   // Smooth slide variants for testimonials
@@ -173,7 +173,7 @@ export default function Home() {
                   <ArrowRight size={18} className="ml-2" />
                 </Button>
               </Link>
-              <Link href="/contact">
+              <Link href="/desai_aryan_jignesh.pdf" target="_blank">
                 <Button
                   variant="outline"
                   size="lg"
