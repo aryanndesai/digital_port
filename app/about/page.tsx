@@ -69,7 +69,7 @@ export default function AboutPage() {
       subtitle: "Staying current",
       image: "/book.jpg?height=400&width=600",
       description:
-        "Reading books is arguably one of the most effective ways to acquire firsthand knowledge.",
+        "Reading books is arguably one of the most effective ways to acquire firsthand knowledge. This is one of my favourite books on non fiction writing.",
     },
   ]
 

@@ -95,14 +95,14 @@ export default function ProjectDetailPage() {
       ],
       credits: [
         {
-          title: "AI Research Team",
+          title: "Business Team",
           description:
-            "Collaborated with AI researchers to implement machine learning algorithms and optimize prompt engineering for better insights delivery across the platform.",
+            "The team worked closely with business stakeholders to understand user needs and translate them into technical requirements, ensuring the platform meets market demands and provides real value to startups.",
         },
         {
           title: "Product Design Team",
           description:
-            "Worked closely with designers to create intuitive dashboard interfaces and user experience flows that make complex AI insights accessible to non-technical users.",
+            "Worked closely with my friends to create intuitive dashboard interfaces and user experience flows that make complex AI insights accessible to non-technical users. And have overall seemless feature ofintegration of all the code.",
         },
       ],
     },
@@ -197,10 +197,10 @@ export default function ProjectDetailPage() {
         },
       ],
       liveUrl: "https://ecoprimers.fly.dev/",
-      githubUrl: "#",
+      githubUrl: "https://github.com/dentolos19/ecoprimers",
       metadata: {
         techStack: ["Python", "Flask", "SQLite", "AI Image Recognition", "HTML/CSS", "JavaScript"],
-        role: "Full Stack Developer",
+        role: "Lead User Engagement and Full Stack Developer",
         tools: ["Python", "Flask Framework", "SQLite", "AI APIs", "Git"],
         timeline: "2024 – 2025",
       },
@@ -262,10 +262,10 @@ export default function ProjectDetailPage() {
         },
       ],
       liveUrl: "https://polyguru.xyz/",
-      githubUrl: "#",
+      githubUrl: "",
       metadata: {
         techStack: ["Next.js", "PostgreSQL", "Prisma ORM", "TypeScript", "AI Features"],
-        role: "Lead Developer & Designer",
+        role: "Lead Creative innovator & Designer",
         tools: ["Next.js", "PostgreSQL", "Prisma", "Git", "Figma"],
         timeline: "2024 – Present",
       },
@@ -310,7 +310,7 @@ export default function ProjectDetailPage() {
       ], 
       imageCaptions: [
         "Main game interface showing battle system",
-        "Pokemon inventory and evolution tracking"
+        "Code in c# showcasing game mechanics"
       ],
       challenges: [
         { 
@@ -322,8 +322,8 @@ export default function ProjectDetailPage() {
           description: "Implemented efficient save/load systems to handle complex game state including Pokemon stats, items, and quest progress." 
         },
       ],
-      liveUrl: "#",
-      githubUrl: "#",
+      liveUrl: "",
+      githubUrl: "https://github.com/aryannjdesai/Pokemon-Pocket",
       metadata: {
         techStack: ["C#", ".NET Framework", "SQLite", "Object-Oriented Programming"],
         role: "Game Developer",
@@ -364,13 +364,13 @@ export default function ProjectDetailPage() {
       title: "Financial Analysis Dashboard",
       summary: "Interactive investment dashboard with return projections and financial insights visualization",
       description:
-        "Created comprehensive financial analysis tools using Excel and Tableau to build interactive dashboards for investment return projections and financial insights. The project demonstrates advanced data visualization techniques and financial modeling capabilities, providing users with clear, actionable insights into investment performance, budgeting tools, and return projections for various financial scenarios.",
+        "Created comprehensive financial analysis tools using Excel and Tableau to build interactive dashboards for investment overview projections and financial insights. The project demonstrates advanced data visualization techniques and financial modeling capabilities, providing users with clear, actionable insights into investment performance, budgeting tools, and return projections for various financial scenarios.",
       images: [
-        "/placeholder.svg?height=600&width=800",
-        "/placeholder.svg?height=600&width=800",
+        "/tableu.jpg?height=600&width=800",
+        "/excel.jpg?height=600&width=800",
       ],
       imageCaptions: [
-        "Main dashboard showing investment portfolio overview",
+        "Main dashboard showing portfolio overview",
         "Detailed financial projection and analysis charts"
       ],
       challenges: [
@@ -384,7 +384,7 @@ export default function ProjectDetailPage() {
         },
       ],
       liveUrl: "#",
-      githubUrl: "#",
+      githubUrl: "https://github.com/aryannjdesai/Data-Analysis",
       metadata: {
         techStack: ["Tableau", "Excel", "Data Visualization", "Financial Modeling"],
         role: "Data Analyst & Developer",
@@ -395,7 +395,7 @@ export default function ProjectDetailPage() {
         {
           title: "Investment Analysis Tools",
           content:
-            "Developed sophisticated Excel models for investment analysis, including compound interest calculators, portfolio diversification tools, and risk assessment frameworks. The tools help users make informed investment decisions based on historical data and projected returns.",
+            "Gained skills in using Excel to create helpful investment tools, such as calculators for interest growth, simple portfolio planning sheets, and basic risk checkers. These tools support better decision-making using past data and future estimates.",
         },
         {
           title: "Interactive Dashboards",
@@ -403,9 +403,9 @@ export default function ProjectDetailPage() {
             "Built dynamic Tableau dashboards that visualize investment performance, market trends, and financial projections through interactive charts and graphs. Users can filter data by time periods, investment types, and risk levels to gain personalized insights.",
         },
         {
-          title: "Budgeting & Planning",
+          title: "Excel Sheet",
           content:
-            "Created comprehensive budgeting tools that track expenses, income, and savings goals. The system provides automated calculations for financial planning scenarios and helps users optimize their financial strategies for long-term wealth building.",
+            "Learnt how to use Excel effectively by creating a budgeting sheet that tracks income, expenses, and savings goals. Applied formulas and functions to automate financial calculations and generate real-time summaries. This helped me understand how to visualize personal cash flow, manage budgets better, and plan for long-term financial stability.",
         },
       ],
       credits: [
@@ -479,7 +479,7 @@ export default function ProjectDetailPage() {
             transition={{ duration: 1, ease: [0.25, 0.1, 0.25, 1] }}
             className="mb-16"
           >
-            <h2 className="text-4xl md:text-5xl font-light mb-6 tracking-tight text-slate-900">Project Dive</h2>
+            <h2 className="text-4xl md:text-5xl font-light mb-6 tracking-tight text-slate-900">Project Deep Dive</h2>
             <div className="w-16 h-1 bg-slate-900 mb-8"></div>
             <p className="text-lg md:text-xl text-slate-600 font-light max-w-3xl">
               Detailed insights into the development process, challenges overcome, and solutions implemented
