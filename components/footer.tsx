@@ -5,8 +5,8 @@ import { Github, Linkedin, Mail, Twitter, Heart, Phone, MapPin } from "lucide-re
 
 export default function Footer() {
   const socialLinks = [
-    { icon: Github, href: "#", label: "GitHub" },
-    { icon: Linkedin, href: "#", label: "LinkedIn" },
+    { icon: Github, href: "https://github.com/aryannjdesai", label: "GitHub" },
+    { icon: Linkedin, href: "https://www.linkedin.com/in/aryan-d-781b08317/", label: "LinkedIn" },
     { icon: Twitter, href: "#", label: "Twitter" },
     { icon: Mail, href: "mailto:aryannjdesai@gmail.com", label: "Email" },
   ]
@@ -38,7 +38,7 @@ export default function Footer() {
           >
             <h3 className="text-2xl font-light text-slate-900">Aryan Desai</h3>
             <p className="text-slate-600 leading-relaxed">
-              Full Stack Engineer documenting my journey from student to developer through academic, internship, and
+              Full Stack Developer documenting my journey from student to developer through academic, internship, and
               self-driven IT projects.
             </p>
             <div className="flex space-x-4">
@@ -96,8 +96,8 @@ export default function Footer() {
               </div>
               <div className="flex items-center space-x-2">
                 <Phone size={16} />
-                <a href="tel:+6589271451" className="hover:text-slate-900 transition-colors duration-200">
-                  +65 8927 1451
+                <a href="tel:+658" className="hover:text-slate-900 transition-colors duration-200">
+                  +65 89## ####
                 </a>
               </div>
               <div className="flex items-center space-x-2">

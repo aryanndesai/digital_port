@@ -145,7 +145,7 @@ export default function Home() {
               animate={{ opacity: 1 }}
               transition={{ duration: 1, delay: 0.4 }}
             >
-              Full Stack Engineer
+              Full Stack Developer
             </motion.h1>
 
             <motion.p
