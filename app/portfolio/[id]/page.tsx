@@ -11,6 +11,10 @@ import {
   Calendar,
   ChevronLeft,
   ChevronRight,
+  Search,
+  Users,
+  Lightbulb,
+  CheckCircle,
 } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
@@ -32,11 +36,13 @@ export default function ProjectDetailPage() {
   const heroRef = useRef(null)
   const contentRef = useRef(null)
   const mainRef = useRef(null)
+  const processRef = useRef(null)
   const creditsRef = useRef(null)
 
   const isHeroInView = useInView(heroRef, { once: true, margin: "-20%" })
   const isContentInView = useInView(contentRef, { once: true, margin: "-20%" })
   const isMainInView = useInView(mainRef, { once: true, margin: "-20%" })
+  const isProcessInView = useInView(processRef, { once: true, margin: "-20%" })
   const isCreditsInView = useInView(creditsRef, { once: true, margin: "-20%" })
 
   // Project data with unique content for each project
@@ -53,9 +59,9 @@ export default function ProjectDetailPage() {
         "/fourth.png?height=600&width=800",
       ],
       imageCaptions: [
-        "Main landing page showing AI insights and recommended servoces for you",
+        "Main landing page showing AI insights and recommended services for you",
         "A RAG chatbot powered by AI",
-        "Resource Hub which allows SMEs to seek for grants by goverments",
+        "Resource Hub which allows SMEs to seek for grants by governments",
         "AI solution marketplace browsing interface"
       ],
       challenges: [
@@ -67,6 +73,32 @@ export default function ProjectDetailPage() {
           title: "Secure Payments",       
           description: "Implemented Stripe orchestration with fraud-detection rules to support multi-currency, subscription & usage billing." 
         },
+      ],
+      workProcess: [
+        {
+          title: "Research & Discovery",
+          description: "Conducted market research to understand the AI tools landscape and identified pain points in AI adoption. Interviewed 15+ startups to discover that 73% struggled with finding reliable AI solutions and 68% faced integration challenges.",
+          tasks: ["Market Analysis", "User Interviews", "Competitive Research"],
+          icon: Search
+        },
+        {
+          title: "System Architecture",
+          description: "Designed scalable architecture to handle complex marketplace requirements including dynamic pricing, real-time availability, multi-tenant isolation, and seamless payment processing across multiple AI service providers.",
+          tasks: ["System Design", "Database Architecture", "API Development"],
+          icon: Code
+        },
+        {
+          title: "MVP Development",
+          description: "Built the initial platform focusing on core marketplace functionality: service discovery, user management, and basic payment processing. Implemented vector search using Upstash for intelligent service recommendations and integrated Google Gemini for AI-powered advisory features.",
+          tasks: ["Frontend Development", "Backend Integration", "Payment Systems"],
+          icon: Wrench
+        },
+        {
+          title: "Testing & Optimization",
+          description: "Launched beta with 5 early adopters, gathering feedback on user experience and platform stability. Implemented automated testing, performance monitoring, and continuous deployment pipelines. Refined the AI recommendation engine based on usage patterns and user feedback.",
+          tasks: ["Beta Testing", "Performance Optimization", "User Feedback Integration"],
+          icon: CheckCircle
+        }
       ],
       liveUrl: "https://initiate.global",
       githubUrl: "#",
@@ -88,7 +120,7 @@ export default function ProjectDetailPage() {
             "Led prompt engineering initiatives to optimize AI insights delivery across the platform. Built sophisticated analytics panels that process user data and startup metrics, providing actionable intelligence for both admin users and startup clients. The AI integration includes smart recommendations and automated insights generation.",
         },
         {
-          title: "Notification Systems ",
+          title: "Notification Systems",
           content:
             "Developed comprehensive in-app and email notification systems that improved user retention rates significantly. Created a modular review system for user feedback and suggestions across all platform components, enhancing the overall user experience and admin response capabilities.",
         },
@@ -102,7 +134,7 @@ export default function ProjectDetailPage() {
         {
           title: "Product Design Team",
           description:
-            "Worked closely with my friends to create intuitive dashboard interfaces and user experience flows that make complex AI insights accessible to non-technical users. And have overall seemless feature ofintegration of all the code.",
+            "Worked closely with my friends to create intuitive dashboard interfaces and user experience flows that make complex AI insights accessible to non-technical users. And have overall seamless feature integration of all the code.",
         },
       ],
     },
@@ -110,7 +142,7 @@ export default function ProjectDetailPage() {
       title: "ML Stock Predictor",
       summary: "Machine learning application that predicts stock price movements using advanced AI algorithms",
       description:
-        "Built a sophisticated machine learning tool that analyzes historical stock data to predict whether a stock's price will go up or down using past trends and incorporating finacial indicators to predict. This project combines financial trend analysis with artificial intelligence techniques to generate smarter stock predictions which keep learning over time, featuring comprehensive data visualization through interactive charts and dashboards. The system processes large datasets and applies various ML algorithms to identify patterns and make accurate predictions.",
+        "Built a sophisticated machine learning tool that analyzes historical stock data to predict whether a stock's price will go up or down using past trends and incorporating financial indicators to predict. This project combines financial trend analysis with artificial intelligence techniques to generate smarter stock predictions which keep learning over time, featuring comprehensive data visualization through interactive charts and dashboards. The system processes large datasets and applies various ML algorithms to identify patterns and make accurate predictions.",
       images: [
         "/mlbr.png?height=600&width=800",
         "/mlc.png?height=600&width=800",
@@ -130,6 +162,32 @@ export default function ProjectDetailPage() {
           title: "Model Accuracy",       
           description: "Experimented with multiple ML algorithms and feature engineering techniques to improve prediction accuracy in volatile markets." 
         },
+      ],
+      workProcess: [
+        {
+          title: "Data Collection & Analysis",
+          description: "Gathered historical stock data from multiple financial APIs and conducted extensive exploratory data analysis. Identified key patterns in market behavior and selected relevant features including technical indicators, trading volumes, and price movements.",
+          tasks: ["Data Sourcing", "Feature Selection", "Pattern Recognition"],
+          icon: Search
+        },
+        {
+          title: "Model Development",
+          description: "Implemented multiple machine learning algorithms including Random Forest, LSTM neural networks, and regression models. Used feature engineering techniques to create meaningful indicators and tested different model architectures to optimize prediction accuracy.",
+          tasks: ["Algorithm Implementation", "Feature Engineering", "Model Training"],
+          icon: Code
+        },
+        {
+          title: "Backtesting & Validation",
+          description: "Developed comprehensive backtesting framework to evaluate model performance across different market conditions. Implemented cross-validation techniques and created performance metrics to measure prediction accuracy and risk-adjusted returns.",
+          tasks: ["Backtesting Framework", "Performance Metrics", "Risk Assessment"],
+          icon: Wrench
+        },
+        {
+          title: "Deployment & Monitoring",
+          description: "Built real-time prediction system with automated data updates and model retraining capabilities. Created visualization dashboards to display predictions and implemented monitoring systems to track model performance and detect data drift.",
+          tasks: ["Real-time Processing", "Dashboard Creation", "Performance Monitoring"],
+          icon: CheckCircle
+        }
       ],
       liveUrl: "#",
       githubUrl: "https://github.com/aryannjdesai/ML-Stock-Predictor",
@@ -196,6 +254,32 @@ export default function ProjectDetailPage() {
           description: "Designed gamification mechanics that balanced competition with collaboration to drive sustained eco-friendly behaviors and tried to implement games that enhance user retention." 
         },
       ],
+      workProcess: [
+        {
+          title: "Environmental Research",
+          description: "Conducted extensive research on environmental practices and sustainability initiatives. Analyzed user behavior patterns in environmental apps and identified key motivators for eco-friendly actions. Collaborated with environmental experts to validate the impact measurement framework.",
+          tasks: ["Sustainability Research", "User Behavior Analysis", "Expert Consultation"],
+          icon: Search
+        },
+        {
+          title: "AI Integration Design",
+          description: "Designed and implemented AI-powered image verification system to authenticate environmental actions. Integrated machine learning models for image recognition and developed classification algorithms to identify different types of eco-friendly activities.",
+          tasks: ["AI Model Selection", "Image Processing", "Classification Algorithms"],
+          icon: Code
+        },
+        {
+          title: "Gamification Development",
+          description: "Built comprehensive gamification system with points, badges, and leaderboards to encourage user participation. Implemented social features and challenges to create community engagement around environmental consciousness.",
+          tasks: ["Gamification Mechanics", "Social Features", "Reward Systems"],
+          icon: Wrench
+        },
+        {
+          title: "Impact Tracking",
+          description: "Created analytics dashboard to track individual and collective environmental impact. Implemented metrics for carbon footprint reduction, waste prevention, and other sustainability indicators with real-time updates and progress visualization.",
+          tasks: ["Impact Metrics", "Dashboard Creation", "Progress Tracking"],
+          icon: CheckCircle
+        }
+      ],
       liveUrl: "https://ecoprimers.fly.dev/",
       githubUrl: "https://github.com/dentolos19/ecoprimers",
       metadata: {
@@ -254,12 +338,38 @@ export default function ProjectDetailPage() {
       challenges: [
         { 
           title: "Content Moderation", 
-          description: "Implemented AI-assisted moderation tools to maintain academic integrity while encouraging open discussion. And while using ai to learn better ensuring the learning process ocurs." 
+          description: "Implemented AI-assisted moderation tools to maintain academic integrity while encouraging open discussion. And while using ai to learn better ensuring the learning process occurs." 
         },
         { 
           title: "Personalization at Scale",       
           description: "Developed recommendation algorithms that adapt to individual learning styles without compromising performance." 
         },
+      ],
+      workProcess: [
+        {
+          title: "Educational Research",
+          description: "Conducted comprehensive research on peer learning methodologies and student engagement patterns. Interviewed educators and students to understand pain points in current learning systems and identified opportunities for technology-enhanced collaboration.",
+          tasks: ["Learning Theory Research", "Student Interviews", "Educator Consultation"],
+          icon: Search
+        },
+        {
+          title: "Platform Architecture",
+          description: "Designed scalable platform architecture to support subject-based forums, AI recommendations, and real-time collaboration. Built intelligent filtering systems and implemented AI-powered content suggestions to enhance learning experience.",
+          tasks: ["System Architecture", "AI Integration", "Database Design"],
+          icon: Code
+        },
+        {
+          title: "Feature Development",
+          description: "Developed core features including smart forums, progress tracking, and collaborative tools. Implemented AI-powered study recommendations and created adaptive learning paths based on individual student performance and preferences.",
+          tasks: ["Forum Development", "AI Recommendations", "Progress Tracking"],
+          icon: Wrench
+        },
+        {
+          title: "User Testing & Optimization",
+          description: "Conducted extensive testing with student groups to validate learning effectiveness and user engagement. Iteratively improved the platform based on feedback and implemented analytics to measure learning outcomes and platform performance.",
+          tasks: ["Beta Testing", "Learning Analytics", "Performance Optimization"],
+          icon: CheckCircle
+        }
       ],
       liveUrl: "https://polyguru.xyz/",
       githubUrl: "",
@@ -290,7 +400,7 @@ export default function ProjectDetailPage() {
         {
           title: "Educational Advisors",
           description:
-            "Consulted with education professionals like our subject teachers to ensure the platform aligns with effective learning methodologies and student needs. Understand what it means for the learning process to occur. Essentialy a empathy study.",
+            "Consulted with education professionals like our subject teachers to ensure the platform aligns with effective learning methodologies and student needs. Understand what it means for the learning process to occur. Essentially a empathy study.",
         },
         {
           title: "Student Beta Testers",
@@ -321,6 +431,32 @@ export default function ProjectDetailPage() {
           title: "State Management",       
           description: "Implemented efficient save/load systems to handle complex game state including Pokemon stats, items, and quest progress." 
         },
+      ],
+      workProcess: [
+        {
+          title: "Game Design & Planning",
+          description: "Researched classic Pokemon game mechanics and RPG design principles to create authentic gameplay experience. Planned game architecture with object-oriented design patterns and defined core gameplay loops including battles, evolution, and progression systems.",
+          tasks: ["Game Mechanics Research", "Architecture Planning", "Feature Design"],
+          icon: Search
+        },
+        {
+          title: "Core System Development",
+          description: "Implemented fundamental game systems using C# and .NET Framework. Built Pokemon classes, battle mechanics, and database integration using SQLite for persistent game state management and player progress tracking.",
+          tasks: ["Object-Oriented Programming", "Database Integration", "Core Mechanics"],
+          icon: Code
+        },
+        {
+          title: "Feature Implementation",
+          description: "Developed advanced features including Pokemon evolution trees, quest progression systems, and turn-based battle mechanics. Created comprehensive type system with effectiveness calculations and strategic combat elements.",
+          tasks: ["Battle System", "Evolution Mechanics", "Quest System"],
+          icon: Wrench
+        },
+        {
+          title: "Testing & Refinement",
+          description: "Conducted extensive playtesting to balance gameplay mechanics and ensure engaging user experience. Refined combat systems, adjusted difficulty curves, and implemented feedback from peer testing to enhance overall game quality.",
+          tasks: ["Game Balance Testing", "User Feedback", "Performance Optimization"],
+          icon: CheckCircle
+        }
       ],
       liveUrl: "",
       githubUrl: "https://github.com/aryannjdesai/Pokemon-Pocket",
@@ -382,6 +518,32 @@ export default function ProjectDetailPage() {
           title: "Model Accuracy",       
           description: "Developed robust financial models that account for market volatility while providing reliable projections." 
         },
+      ],
+      workProcess: [
+        {
+          title: "Financial Analysis Planning",
+          description: "Researched investment analysis methodologies and financial modeling techniques. Identified key metrics for portfolio performance evaluation and defined requirements for interactive dashboard functionality and user experience.",
+          tasks: ["Financial Research", "Requirements Analysis", "Tool Selection"],
+          icon: Search
+        },
+        {
+          title: "Data Model Development",
+          description: "Built comprehensive Excel models for investment analysis including compound interest calculators, risk assessment frameworks, and portfolio diversification tools. Implemented financial formulas and automated calculations for various investment scenarios.",
+          tasks: ["Excel Modeling", "Financial Formulas", "Automation"],
+          icon: Code
+        },
+        {
+          title: "Dashboard Creation",
+          description: "Developed interactive Tableau dashboards that visualize investment performance, market trends, and financial projections. Created dynamic charts and graphs with filtering capabilities for personalized insights and analysis.",
+          tasks: ["Tableau Development", "Data Visualization", "Interactive Features"],
+          icon: Wrench
+        },
+        {
+          title: "Testing & Validation",
+          description: "Validated financial models against historical data and tested dashboard functionality with various investment scenarios. Refined calculations and visualizations based on accuracy requirements and user feedback.",
+          tasks: ["Model Validation", "Accuracy Testing", "User Interface Refinement"],
+          icon: CheckCircle
+        }
       ],
       liveUrl: "#",
       githubUrl: "https://github.com/aryannjdesai/Data-Analysis",
@@ -470,7 +632,7 @@ export default function ProjectDetailPage() {
         </div>
       </section>
 
-      {/* Project Deep Dive - Moved to top */}
+      
       <section ref={contentRef} className="px-4 sm:px-6 lg:px-8 py-20 bg-white">
         <div className="max-w-7xl mx-auto">
           <motion.div
@@ -479,281 +641,335 @@ export default function ProjectDetailPage() {
             transition={{ duration: 1, ease: [0.25, 0.1, 0.25, 1] }}
             className="mb-16"
           >
-            <h2 className="text-4xl md:text-5xl font-light mb-6 tracking-tight text-slate-900">Project Deep Dive</h2>
-            <div className="w-16 h-1 bg-slate-900 mb-8"></div>
-            <p className="text-lg md:text-xl text-slate-600 font-light max-w-3xl">
-              Detailed insights into the development process, challenges overcome, and solutions implemented
-            </p>
-          </motion.div>
+            <h2 className="text-4xl md:text-5xl font-light mb-6 tracking-tight text-slate
+            text-slate-900">Project Deep Dive</h2>
+           <div className="w-16 h-1 bg-slate-900 mb-8"></div>
+           <p className="text-lg md:text-xl text-slate-600 font-light max-w-3xl">
+             Detailed insights into the development process, challenges overcome, and solutions implemented
+           </p>
+         </motion.div>
 
-          <div className="grid md:grid-cols-3 gap-12">
-            {project.sections.map((section, index) => (
-              <motion.div
-                key={section.title}
-                initial={{ opacity: 0, y: 50 }}
-                animate={isContentInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
-                transition={{ duration: 0.8, delay: 0.2 + index * 0.2, ease: [0.25, 0.1, 0.25, 1] }}
-                className="space-y-6"
-              >
-                <h3 className="text-2xl md:text-3xl font-light text-slate-900">{section.title}</h3>
-                <p className="text-slate-600 text-lg leading-relaxed">{section.content}</p>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
+         <div className="grid md:grid-cols-3 gap-12">
+           {project.sections.map((section, index) => (
+             <motion.div
+               key={section.title}
+               initial={{ opacity: 0, y: 50 }}
+               animate={isContentInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
+               transition={{ duration: 0.8, delay: 0.2 + index * 0.2, ease: [0.25, 0.1, 0.25, 1] }}
+               className="space-y-6"
+             >
+               <h3 className="text-2xl md:text-3xl font-light text-slate-900">{section.title}</h3>
+               <p className="text-slate-600 text-lg leading-relaxed">{section.content}</p>
+             </motion.div>
+           ))}
+         </div>
+       </div>
+     </section>
 
-      {/* Main Content Section - 3 Column Layout with Carousel */}
-      <section ref={mainRef} className="py-20 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid lg:grid-cols-12 gap-12 items-start">
-            {/* Left Column - Metadata */}
-            <motion.div
-              initial={{ opacity: 0, x: -50 }}
-              animate={isMainInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 }}
-              transition={{ duration: 0.8, ease: [0.25, 0.1, 0.25, 1] }}
-              className="lg:col-span-3 space-y-6"
-            >
-              {/* Tech Stack */}
-              <div className="bg-white rounded-2xl p-6 card-shadow">
-                <div className="flex items-center mb-4">
-                  <Code size={18} className="mr-2 text-slate-600" />
-                  <h3 className="text-lg font-medium text-slate-900">Tech Stack</h3>
-                </div>
-                <div className="space-y-2">
-                  {project.metadata.techStack.map((tech, index) => (
-                    <motion.div
-                      key={tech}
-                      initial={{ opacity: 0, x: -20 }}
-                      animate={isMainInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -20 }}
-                      transition={{ duration: 0.5, delay: 0.2 + index * 0.1 }}
-                      className="text-slate-600 text-sm"
-                    >
-                      {tech}
-                    </motion.div>
-                  ))}
-                </div>
-              </div>
+     {/* Main Content Section - 3 Column Layout with Carousel */}
+     <section ref={mainRef} className="py-20 px-4 sm:px-6 lg:px-8">
+       <div className="max-w-7xl mx-auto">
+         <div className="grid lg:grid-cols-12 gap-12 items-start">
+           {/* Left Column - Metadata */}
+           <motion.div
+             initial={{ opacity: 0, x: -50 }}
+             animate={isMainInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 }}
+             transition={{ duration: 0.8, ease: [0.25, 0.1, 0.25, 1] }}
+             className="lg:col-span-3 space-y-6"
+           >
+             {/* Tech Stack */}
+             <div className="bg-white rounded-2xl p-6 card-shadow">
+               <div className="flex items-center mb-4">
+                 <Code size={18} className="mr-2 text-slate-600" />
+                 <h3 className="text-lg font-medium text-slate-900">Tech Stack</h3>
+               </div>
+               <div className="space-y-2">
+                 {project.metadata.techStack.map((tech, index) => (
+                   <motion.div
+                     key={tech}
+                     initial={{ opacity: 0, x: -20 }}
+                     animate={isMainInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -20 }}
+                     transition={{ duration: 0.5, delay: 0.2 + index * 0.1 }}
+                     className="text-slate-600 text-sm"
+                   >
+                     {tech}
+                   </motion.div>
+                 ))}
+               </div>
+             </div>
 
-              {/* Role */}
-              <div className="bg-white rounded-2xl p-6 card-shadow">
-                <div className="flex items-center mb-4">
-                  <Target size={18} className="mr-2 text-slate-600" />
-                  <h3 className="text-lg font-medium text-slate-900">Role</h3>
-                </div>
-                <p className="text-slate-600 text-sm">{project.metadata.role}</p>
-              </div>
+             {/* Role */}
+             <div className="bg-white rounded-2xl p-6 card-shadow">
+               <div className="flex items-center mb-4">
+                 <Target size={18} className="mr-2 text-slate-600" />
+                 <h3 className="text-lg font-medium text-slate-900">Role</h3>
+               </div>
+               <p className="text-slate-600 text-sm">{project.metadata.role}</p>
+             </div>
 
-              {/* Tools Used */}
-              <div className="bg-white rounded-2xl p-6 card-shadow">
-                <div className="flex items-center mb-4">
-                  <Wrench size={18} className="mr-2 text-slate-600" />
-                  <h3 className="text-lg font-medium text-slate-900">Tools Used</h3>
-                </div>
-                <div className="space-y-2">
-                  {project.metadata.tools.map((tool, index) => (
-                    <motion.div
-                      key={tool}
-                      initial={{ opacity: 0, x: -20 }}
-                      animate={isMainInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -20 }}
-                      transition={{ duration: 0.5, delay: 0.4 + index * 0.1 }}
-                      className="text-slate-600 text-sm"
-                    >
-                      {tool}
-                    </motion.div>
-                  ))}
-                </div>
-              </div>
+             {/* Tools Used */}
+             <div className="bg-white rounded-2xl p-6 card-shadow">
+               <div className="flex items-center mb-4">
+                 <Wrench size={18} className="mr-2 text-slate-600" />
+                 <h3 className="text-lg font-medium text-slate-900">Tools Used</h3>
+               </div>
+               <div className="space-y-2">
+                 {project.metadata.tools.map((tool, index) => (
+                   <motion.div
+                     key={tool}
+                     initial={{ opacity: 0, x: -20 }}
+                     animate={isMainInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -20 }}
+                     transition={{ duration: 0.5, delay: 0.4 + index * 0.1 }}
+                     className="text-slate-600 text-sm"
+                   >
+                     {tool}
+                   </motion.div>
+                 ))}
+               </div>
+             </div>
 
-              {/* Timeline */}
-              <div className="bg-white rounded-2xl p-6 card-shadow">
-                <div className="flex items-center mb-4">
-                  <Calendar size={18} className="mr-2 text-slate-600" />
-                  <h3 className="text-lg font-medium text-slate-900">Timeline</h3>
-                </div>
-                <p className="text-slate-600 text-sm">{project.metadata.timeline}</p>
-              </div>
-            </motion.div>
+             {/* Timeline */}
+             <div className="bg-white rounded-2xl p-6 card-shadow">
+               <div className="flex items-center mb-4">
+                 <Calendar size={18} className="mr-2 text-slate-600" />
+                 <h3 className="text-lg font-medium text-slate-900">Timeline</h3>
+               </div>
+               <p className="text-slate-600 text-sm">{project.metadata.timeline}</p>
+             </div>
+           </motion.div>
 
-            {/* Center Column - Image Carousel + Challenges */}
-<motion.div
-  initial={{ opacity: 0, y: 50 }}
-  animate={isMainInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
-  transition={{ duration: 0.8, delay: 0.2, ease: [0.25, 0.1, 0.25, 1] }}
-  className="lg:col-span-6 space-y-8"
->
-  {/* Image Carousel */}
-  <div className="relative overflow-hidden rounded-2xl bg-gray-100 border border-slate-200 card-shadow-lg">
-    {/* Main Image */}
-    <div className="relative w-full aspect-video rounded-2xl overflow-hidden bg-gray-100">
-      <img
-        src={project.images[currentImageIndex]}
-        alt={`${project.title} screenshot`}
-        className="absolute inset-0 w-full h-full object-cover"
-      />
-      <div className="absolute inset-0 bg-gradient-to-t from-slate-900/10 to-transparent"></div>
+           {/* Center Column - Image Carousel + Challenges */}
+           <motion.div
+             initial={{ opacity: 0, y: 50 }}
+             animate={isMainInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
+             transition={{ duration: 0.8, delay: 0.2, ease: [0.25, 0.1, 0.25, 1] }}
+             className="lg:col-span-6 space-y-8"
+           >
+             {/* Image Carousel */}
+             <div className="relative overflow-hidden rounded-2xl bg-gray-100 border border-slate-200 card-shadow-lg">
+               {/* Main Image */}
+               <div className="relative w-full aspect-video rounded-2xl overflow-hidden bg-gray-100">
+                 <img
+                   src={project.images[currentImageIndex]}
+                   alt={`${project.title} screenshot`}
+                   className="absolute inset-0 w-full h-full object-cover"
+                 />
+                 <div className="absolute inset-0 bg-gradient-to-t from-slate-900/10 to-transparent"></div>
 
-      {/* Navigation Arrows */}
-      {project.images.length > 1 && (
-        <>
-          <button
-            onClick={prevImage}
-            className="absolute left-4 top-1/2 transform -translate-y-1/2 w-10 h-10 bg-white/80 backdrop-blur-sm rounded-full flex items-center justify-center hover:bg-white transition-colors duration-300 shadow-lg"
-          >
-            <ChevronLeft className="text-slate-700" size={20} />
-          </button>
-          <button
-            onClick={nextImage}
-            className="absolute right-4 top-1/2 transform -translate-y-1/2 w-10 h-10 bg-white/80 backdrop-blur-sm rounded-full flex items-center justify-center hover:bg-white transition-colors duration-300 shadow-lg"
-          >
-            <ChevronRight className="text-slate-700" size={20} />
-          </button>
-        </>
-      )}
+                 {/* Navigation Arrows */}
+                 {project.images.length > 1 && (
+                   <>
+                     <button
+                       onClick={prevImage}
+                       className="absolute left-4 top-1/2 transform -translate-y-1/2 w-10 h-10 bg-white/80 backdrop-blur-sm rounded-full flex items-center justify-center hover:bg-white transition-colors duration-300 shadow-lg"
+                     >
+                       <ChevronLeft className="text-slate-700" size={20} />
+                     </button>
+                     <button
+                       onClick={nextImage}
+                       className="absolute right-4 top-1/2 transform -translate-y-1/2 w-10 h-10 bg-white/80 backdrop-blur-sm rounded-full flex items-center justify-center hover:bg-white transition-colors duration-300 shadow-lg"
+                     >
+                       <ChevronRight className="text-slate-700" size={20} />
+                     </button>
+                   </>
+                 )}
 
-      {/* Image Counter */}
-      {project.images.length > 1 && (
-        <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-black/50 backdrop-blur-sm rounded-full px-3 py-1">
-          <span className="text-white text-sm">
-            {currentImageIndex + 1} / {project.images.length}
-          </span>
-        </div>
-      )}
-    </div>
+                 {/* Image Counter */}
+                 {project.images.length > 1 && (
+                   <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-black/50 backdrop-blur-sm rounded-full px-3 py-1">
+                     <span className="text-white text-sm">
+                       {currentImageIndex + 1} / {project.images.length}
+                     </span>
+                   </div>
+                 )}
+               </div>
 
-    {/* Caption below the image */}
-    <p className="mt-2 px-4 text-center text-xs text-slate-500">
-      {project.imageCaptions?.[currentImageIndex] ?? 
-       `Slide ${currentImageIndex + 1} of ${project.images.length}`}
-    </p>
+               {/* Caption below the image */}
+               <p className="mt-2 px-4 text-center text-xs text-slate-500">
+                 {project.imageCaptions?.[currentImageIndex] ?? 
+                  `Slide ${currentImageIndex + 1} of ${project.images.length}`}
+               </p>
 
-    {/* Thumbnail Navigation */}
-    {project.images.length > 1 && (
-      <div className="p-4 bg-white border-t border-slate-200">
-        <div className="flex space-x-2 overflow-x-auto">
-          {project.images.map((image, index) => (
-            <button
-              key={index}
-              onClick={() => setCurrentImageIndex(index)}
-              className={`flex-shrink-0 w-16 h-12 rounded-lg overflow-hidden border-2 transition-colors duration-300 ${
-                index === currentImageIndex ? "border-slate-900" : "border-slate-200 hover:border-slate-400"
-              }`}
-            >
-              <img
-                src={image || "/placeholder.svg"}
-                alt={`Thumbnail ${index + 1}`}
-                className="w-full h-full object-cover"
-              />
-            </button>
-          ))}
-        </div>
-      </div>
-    )}
-  </div>
+               {/* Thumbnail Navigation */}
+               {project.images.length > 1 && (
+                 <div className="p-4 bg-white border-t border-slate-200">
+                   <div className="flex space-x-2 overflow-x-auto">
+                     {project.images.map((image, index) => (
+                       <button
+                         key={index}
+                         onClick={() => setCurrentImageIndex(index)}
+                         className={`flex-shrink-0 w-16 h-12 rounded-lg overflow-hidden border-2 transition-colors duration-300 ${
+                           index === currentImageIndex ? "border-slate-900" : "border-slate-200 hover:border-slate-400"
+                         }`}
+                       >
+                         <img
+                           src={image || "/placeholder.svg"}
+                           alt={`Thumbnail ${index + 1}`}
+                           className="w-full h-full object-cover"
+                         />
+                       </button>
+                     ))}
+                   </div>
+                 </div>
+               )}
+             </div>
 
-  {/* Challenges Section - Right below the image */}
-  {project.challenges && project.challenges.length > 0 && (
-    <div className="space-y-4">
-      <h3 className="text-2xl font-light text-slate-900 text-center">Challenges Faced</h3>
-      <div className="grid md:grid-cols-2 gap-4">
-        {project.challenges.map((challenge, index) => (
-          <motion.div
-            key={index}
-            initial={{ opacity: 0, y: 20 }}
-            animate={isMainInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-            transition={{ duration: 0.5, delay: 0.3 + index * 0.1 }}
-            className="bg-white rounded-xl p-6 card-shadow border border-slate-100"
-          >
-            <div className="flex items-start space-x-3">
-              <div className="flex-shrink-0 w-6 h-6 bg-slate-900 rounded-full flex items-center justify-center">
-                <span className="text-white text-xs font-medium">{index + 1}</span>
-              </div>
-              <div className="flex-1">
-                <h4 className="text-base font-medium text-slate-900 mb-2">{challenge.title}</h4>
-                <p className="text-slate-600 text-sm leading-relaxed">{challenge.description}</p>
-              </div>
+             {/* Challenges Section - Right below the image */}
+             {project.challenges && project.challenges.length > 0 && (
+               <div className="space-y-4">
+                 <h3 className="text-2xl font-light text-slate-900 text-center">Challenges Faced</h3>
+                 <div className="grid md:grid-cols-2 gap-4">
+                   {project.challenges.map((challenge, index) => (
+                     <motion.div
+                       key={index}
+                       initial={{ opacity: 0, y: 20 }}
+                       animate={isMainInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+                       transition={{ duration: 0.5, delay: 0.3 + index * 0.1 }}
+                       className="bg-white rounded-xl p-6 card-shadow border border-slate-100"
+                     >
+                       <div className="flex items-start space-x-3">
+                         <div className="flex-shrink-0 w-6 h-6 bg-slate-900 rounded-full flex items-center justify-center">
+                           <span className="text-white text-xs font-medium">{index + 1}</span>
+                         </div>
+                         <div className="flex-1">
+                           <h4 className="text-base font-medium text-slate-900 mb-2">{challenge.title}</h4>
+                           <p className="text-slate-600 text-sm leading-relaxed">{challenge.description}</p>
+                         </div>
+                       </div>
+                     </motion.div>
+                   ))}
+                 </div>
+               </div>
+             )}
+           </motion.div>
+
+           {/* Right Column - Description and Action Buttons */}
+           <motion.div
+             initial={{ opacity: 0, x: 50 }}
+             animate={isMainInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 50 }}
+             transition={{ duration: 0.8, delay: 0.4, ease: [0.25, 0.1, 0.25, 1] }}
+             className="lg:col-span-3 space-y-6"
+           >
+             
+             {/* About This Project */}
+             <div className="bg-white rounded-2xl p-6 card-shadow">
+               <h3 className="text-2xl font-light text-slate-900 mb-6">About This Project</h3>
+               <p className="text-slate-600 text-base leading-relaxed mb-8">{project.description}</p>
+
+               {/* Action Buttons */}
+               <div className="space-y-3">
+                 <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }} className="w-full">
+                   <Button className="w-full bg-slate-900 text-white hover:bg-slate-800 py-3 rounded-full" asChild>
+                     <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
+                       <ExternalLink size={16} className="mr-2" />
+                       View Live
+                     </a>
+                   </Button>
+                 </motion.div>
+                 <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }} className="w-full">
+                   <Button
+                     variant="outline"
+                     className="w-full border-2 border-slate-300 text-slate-900 hover:bg-slate-50 bg-transparent py-3 rounded-full"
+                     asChild
+                   >
+                     <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
+                       <Github size={16} className="mr-2" />
+                       View Code
+                     </a>
+                   </Button>
+                 </motion.div>
+               </div>
+             </div>
+           </motion.div>
+         </div>
+       </div>
+     </section>
+
+     {/* Work Process Section */}
+<section ref={processRef} className="px-4 sm:px-6 lg:px-8 py-20 bg-white">
+  <div className="max-w-7xl mx-auto">
+    <motion.div
+      initial={{ opacity: 0, y: 60 }}
+      animate={isProcessInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 60 }}
+      transition={{ duration: 1, ease: [0.25, 0.1, 0.25, 1] }}
+      className="mb-16"
+    >
+      <h2 className="text-4xl md:text-5xl font-light mb-6 tracking-tight text-slate-900">Work Process</h2>
+      <div className="w-16 h-1 bg-slate-900 mb-8"></div>
+      <p className="text-lg md:text-xl text-slate-600 font-light max-w-3xl">
+        A detailed breakdown of the methodology and approach used to bring this project to life
+      </p>
+    </motion.div>
+
+    <div className="grid md:grid-cols-2 gap-8">
+      {project.workProcess.map((process, index) => (
+        <motion.div
+          key={process.title}
+          initial={{ opacity: 0, y: 50 }}
+          animate={isProcessInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
+          transition={{ duration: 0.8, delay: 0.2 + index * 0.1, ease: [0.25, 0.1, 0.25, 1] }}
+          className="bg-white rounded-2xl p-6 card-shadow border border-slate-100"
+        >
+          {/* Icon and Title */}
+          <div className="flex items-center mb-4">
+            <div className="w-12 h-12 bg-slate-900 rounded-lg flex items-center justify-center mr-4">
+              <process.icon className="text-white" size={20} />
             </div>
-          </motion.div>
-        ))}
-      </div>
-    </div>
-  )}
-</motion.div>
-
-            {/* Right Column - Description and Action Buttons */}
-            <motion.div
-              initial={{ opacity: 0, x: 50 }}
-              animate={isMainInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 50 }}
-              transition={{ duration: 0.8, delay: 0.4, ease: [0.25, 0.1, 0.25, 1] }}
-              className="lg:col-span-3 space-y-6"
-            >
-              
-              {/* About This Project */}
-              <div className="bg-white rounded-2xl p-6 card-shadow">
-                <h3 className="text-2xl font-light text-slate-900 mb-6">About This Project</h3>
-                <p className="text-slate-600 text-base leading-relaxed mb-8">{project.description}</p>
-
-                {/* Action Buttons */}
-                <div className="space-y-3">
-                  <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }} className="w-full">
-                    <Button className="w-full bg-slate-900 text-white hover:bg-slate-800 py-3 rounded-full" asChild>
-                      <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
-                        <ExternalLink size={16} className="mr-2" />
-                        View Live
-                      </a>
-                    </Button>
-                  </motion.div>
-                  <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }} className="w-full">
-                    <Button
-                      variant="outline"
-                      className="w-full border-2 border-slate-300 text-slate-900 hover:bg-slate-50 bg-transparent py-3 rounded-full"
-                      asChild
-                    >
-                      <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
-                        <Github size={16} className="mr-2" />
-                        View Code
-                      </a>
-                    </Button>
-                  </motion.div>
-                </div>
-              </div>
-            </motion.div>
+            <h3 className="text-xl font-medium text-slate-900">{process.title}</h3>
           </div>
-        </div>
-      </section>
-                
-      {/* Credits Section */}
-      <section ref={creditsRef} className="px-4 sm:px-6 lg:px-8 pb-20 py-20 bg-white">
-        <div className="max-w-7xl mx-auto">
-          <motion.div
-            initial={{ opacity: 0, y: 60 }}
-            animate={isCreditsInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 60 }}
-            transition={{ duration: 1, ease: [0.25, 0.1, 0.25, 1] }}
-            className="mb-16"
-          >
-            <h2 className="text-4xl md:text-5xl font-light mb-6 tracking-tight text-slate-900">Team Credits</h2>
-            <div className="w-16 h-1 bg-slate-900 mb-8"></div>
-            <p className="text-lg md:text-xl text-slate-600 font-light max-w-3xl">
-              Acknowledging the talented individuals who contributed to this project's success
-            </p>
-          </motion.div>
 
-          <div className="grid md:grid-cols-2 gap-16">
-            {project.credits.map((credit, index) => (
-              <motion.div
-                key={credit.title}
-                initial={{ opacity: 0, y: 50 }}
-                animate={isCreditsInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
-                transition={{ duration: 0.8, delay: 0.2 + index * 0.2, ease: [0.25, 0.1, 0.25, 1] }}
-                className="space-y-4"
+          {/* Description */}
+          <p className="text-slate-600 text-sm leading-relaxed mb-4">{process.description}</p>
+          
+          {/* Tasks */}
+          <div className="flex flex-wrap gap-2">
+            {process.tasks.map((task, taskIndex) => (
+              <span
+                key={taskIndex}
+                className="px-2 py-1 bg-slate-100 text-slate-700 text-xs rounded border border-slate-200"
               >
-                <h3 className="text-2xl font-light text-slate-900">{credit.title}</h3>
-                <p className="text-slate-600 text-lg leading-relaxed">{credit.description}</p>
-              </motion.div>
+                {task}
+              </span>
             ))}
           </div>
-        </div>
-      </section>
+        </motion.div>
+      ))}
     </div>
-  )
+  </div>
+</section>
+               
+     {/* Credits Section */}
+     <section ref={creditsRef} className="px-4 sm:px-6 lg:px-8 pb-20 py-20 bg-white">
+       <div className="max-w-7xl mx-auto">
+         <motion.div
+           initial={{ opacity: 0, y: 60 }}
+           animate={isCreditsInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 60 }}
+           transition={{ duration: 1, ease: [0.25, 0.1, 0.25, 1] }}
+           className="mb-16"
+         >
+           <h2 className="text-4xl md:text-5xl font-light mb-6 tracking-tight text-slate-900">Team Credits</h2>
+           <div className="w-16 h-1 bg-slate-900 mb-8"></div>
+           <p className="text-lg md:text-xl text-slate-600 font-light max-w-3xl">
+             Acknowledging the talented individuals who contributed to this project's success
+           </p>
+         </motion.div>
+
+         <div className="grid md:grid-cols-2 gap-16">
+           {project.credits.map((credit, index) => (
+             <motion.div
+               key={credit.title}
+               initial={{ opacity: 0, y: 50 }}
+               animate={isCreditsInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
+               transition={{ duration: 0.8, delay: 0.2 + index * 0.2, ease: [0.25, 0.1, 0.25, 1] }}
+               className="space-y-4"
+             >
+               <h3 className="text-2xl font-light text-slate-900">{credit.title}</h3>
+               <p className="text-slate-600 text-lg leading-relaxed">{credit.description}</p>
+             </motion.div>
+           ))}
+         </div>
+       </div>
+     </section>
+   </div>
+ )
 }
